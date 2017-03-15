@@ -1,0 +1,280 @@
+h1 {
+  font-size: 110px;
+  line-height: 90px;
+  font-family: "RalewayBlack";
+  color: #ffffff; }
+
+h2 {
+  font-size: 42px;
+  line-height: 48px;
+  font-family: "OpenSansBold";
+  color: #333333; }
+
+h3 {
+  font-size: 26px;
+  line-height: 36px;
+  font-family: "RalewayBlack";
+  color: #ffffff; }
+
+h4 {
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "MerriweatherLight";
+  color: #ffffff; }
+
+body {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "OpenSansRegular";
+  color: #fff; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/******************************* NAV *******************************/
+nav {
+  position: absolute;
+  z-index: 1000;
+  right: 0px; }
+  nav button.navigation {
+    margin: 0 auto;
+    width: 75px;
+    height: 75px;
+    font-size: 35px;
+    background-color: transparent;
+    border: none;
+    outline: none; }
+    nav button.navigation:active {
+      -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+      transform: translate(2px, 2px); }
+  nav ul.socialgroup {
+    display: none;
+    margin: 0 auto;
+    padding: 0px; }
+    nav ul.socialgroup li {
+      text-align: center;
+      list-style-type: none;
+      width: 75px;
+      height: 75px;
+      background-color: #fff;
+      border: 1px solid #cccccc; }
+      nav ul.socialgroup li a {
+        display: block;
+        margin: 0 auto;
+        padding: 8px;
+        color: #333333; }
+        nav ul.socialgroup li a:hover {
+          color: #b7a6a6; }
+        nav ul.socialgroup li a:active {
+          -webkit-transform: translate(2px, 2px);
+          -ms-transform: translate(2px, 2px);
+          transform: translate(2px, 2px); }
+      nav ul.socialgroup li ul.submenu {
+        display: none;
+        z-index: 100;
+        width: 312px;
+        padding: 0px;
+        position: absolute;
+        right: 74px;
+        top: 225px; }
+        nav ul.socialgroup li ul.submenu li {
+          margin: 0 auto;
+          display: inline-block;
+          text-align: center;
+          float: right;
+          border: none; }
+          nav ul.socialgroup li ul.submenu li a {
+            display: inline-block;
+            margin: 0px auto;
+            padding: 8px;
+            color: #fff; }
+        nav ul.socialgroup li ul.submenu li.facebook {
+          background-color: #3c74ba; }
+          nav ul.socialgroup li ul.submenu li.facebook:hover {
+            background-color: #2d435f; }
+        nav ul.socialgroup li ul.submenu li.twitter {
+          background-color: #1fc2f7; }
+          nav ul.socialgroup li ul.submenu li.twitter:hover {
+            background-color: #105970; }
+        nav ul.socialgroup li ul.submenu li.google {
+          background-color: #db321b; }
+          nav ul.socialgroup li ul.submenu li.google:hover {
+            background-color: #802317; }
+        nav ul.socialgroup li ul.submenu li.pinterest {
+          background-color: #a80909; }
+          nav ul.socialgroup li ul.submenu li.pinterest:hover {
+            background-color: #640808; }
+
+/******************************* NAV *******************************/
+/******************************* MAIN *******************************/
+section#main {
+  background-color: #333333; }
+  section#main h1 {
+    text-transform: uppercase; }
+  section#main hr {
+    width: 140px;
+    border: none;
+    border-bottom: 2px solid #da491c;
+    margin: 35px auto; }
+
+/******************************* MAIN *******************************/
+/******************************* GALLERY *******************************/
+section#gallery h2 {
+  text-transform: uppercase;
+  margin: 105px auto 25px auto; }
+section#gallery h4 {
+  color: #333333;
+  margin: 0 auto; }
+section#gallery hr {
+  margin: 35px 0px;
+  width: 140px;
+  border: none;
+  border-bottom: 2px solid #da491c; }
+section#gallery ul.groups {
+  padding: 0px;
+  margin-bottom: 40px; }
+  section#gallery ul.groups li {
+    display: inline;
+    margin-right: 35px;
+    font-family: "OpenSans";
+    color: #646464; }
+section#gallery button {
+  max-width: 270px;
+  width: 100%;
+  padding: 20px 70px;
+  margin-bottom: 85px;
+  background-color: transparent;
+  border: 1px solid #666666;
+  outline: none;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 36px;
+  font-family: "OpenSans";
+  color: #333333; }
+  section#gallery button:active, section#gallery button:focus {
+    background-color: #333333;
+    color: #fff; }
+section#gallery img {
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto; }
+section#gallery img.last {
+  margin-bottom: 100px; }
+
+/******************************* GALLERY *******************************/
+/******************************* FOOTER *******************************/
+footer {
+  background-color: #333333; }
+  footer ul.menu {
+    padding: 0px;
+    margin: 80px auto 35px auto; }
+    footer ul.menu li {
+      display: inline;
+      margin-right: 25px; }
+      footer ul.menu li a {
+        font-size: 13px;
+        line-height: 36px;
+        font-family: "LatoRegular";
+        color: #ffffff;
+        text-decoration: none; }
+        footer ul.menu li a:hover {
+          -webkit-transition: color 0.5s ease-in-out;
+          transition: color 0.5s ease-in-out;
+          color: #c6c3c3; }
+  footer form div.formWrapper {
+    border: none;
+    border-bottom: 1px solid #e7dede;
+    max-width: 840px; }
+  footer form input[type="email"] {
+    width: 100%;
+    border: none;
+    display: inline-block;
+    padding: 0px 40px 20px 0px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    font-size: 60px;
+    line-height: 30px;
+    font-family: "LatoLight"; }
+  footer form input[type="email"]::-webkit-input-placeholder {
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.3s ease;
+            transition: text-indent 0.3s ease;
+    color: #4c4b4b; }
+  footer form input[type="email"]::-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+    color: #4c4b4b; }
+  footer form input[type="email"]:-moz-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+    color: #4c4b4b; }
+  footer form input[type="email"]:-ms-input-placeholder {
+    text-indent: 0px;
+    transition: text-indent 0.3s ease;
+    color: #4c4b4b; }
+  footer form input[type="email"]:focus::-webkit-input-placeholder {
+    text-indent: 1000px;
+    -webkit-transition: text-indent 0.3s ease;
+            transition: text-indent 0.3s ease;
+    color: #fff; }
+  footer form input[type="email"]:focus::-moz-placeholder {
+    text-indent: 1000px;
+    transition: text-indent 0.3s ease;
+    color: #fff; }
+  footer form input[type="email"]:focus:-moz-placeholder {
+    text-indent: 1000px;
+    transition: text-indent 0.3s ease;
+    color: #fff; }
+  footer form input[type="email"]:focus:-ms-input-placeholder {
+    text-indent: 1000px;
+    transition: text-indent 0.3s ease;
+    color: #fff; }
+  footer form input[type="submit"] {
+    display: none;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "OpenSans";
+    color: #fff;
+    background-color: transparent;
+    padding: 15px;
+    width: 100%;
+    max-width: 130px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase; }
+    footer form input[type="submit"]:hover {
+      outline: 1px solid; }
+  footer form p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "LatoRegular";
+    color: #999999;
+    margin: 14px auto 0px auto; }
+  footer p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "LatoRegular";
+    color: #999999; }
+  footer ul.social {
+    padding: 0px; }
+    footer ul.social li {
+      display: inline; }
+      footer ul.social li a {
+        color: #999999; }
+        footer ul.social li a:hover, footer ul.social li a:active, footer ul.social li a:focus {
+          text-decoration: none; }
+        footer ul.social li a:hover {
+          color: #7d7b7b;
+          -webkit-transition: color 0.5s;
+          transition: color 0.5s; }
+
+/******************************* FOOTER *******************************/

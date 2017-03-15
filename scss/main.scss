@@ -1,0 +1,330 @@
+﻿@mixin font ($size:null, $height:null, $family:null, $color:null) {
+	font-size: $size;
+	line-height: $height;
+	font-family: $family;
+	color: $color;
+}
+
+h1 {@include font(110px, 90px, "RalewayBlack", #ffffff);}
+h2 {@include font(42px, 48px, "OpenSansBold", #333333)}
+h3 {@include font(26px, 36px, "RalewayBlack", #ffffff)}
+h4 {@include font(18px, 36px, "MerriweatherLight", #ffffff)}
+h5 {}
+h6 {}
+
+body {
+	@include font(14px, 30px, "OpenSansRegular", #fff);
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+
+/******************************* NAV *******************************/
+	
+	nav {
+		position: absolute;
+		z-index: 1000;
+		right: 0px;
+
+		button.navigation {
+			margin: 0 auto;
+			width: 75px;
+			height: 75px;
+			font-size: 35px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+
+				&:active {
+					-webkit-transform: translate(2px, 2px);
+					-ms-transform: translate(2px, 2px);
+					-o-transform: translate(2px, 2px);
+					transform: translate(2px, 2px);
+				};
+		}
+
+		ul.socialgroup {
+			display: none;
+			margin: 0 auto;
+			padding: 0px;
+				li {
+					text-align: center;
+					list-style-type: none;
+					width: 75px;
+					height: 75px;
+					background-color: #fff;
+					border: 1px solid #cccccc;
+
+						a {
+							display: block;
+							margin: 0 auto;
+							padding: 8px;
+							color: #333333;
+								&:hover {
+									color: #b7a6a6;
+								};
+
+								&:active {
+									-webkit-transform: translate(2px, 2px);
+									-ms-transform: translate(2px, 2px);
+									-o-transform: translate(2px, 2px);
+									transform: translate(2px, 2px);
+								};
+						}
+
+						ul.submenu {
+							display: none;
+							z-index: 100;
+							width: 312px;
+							padding: 0px;
+							position: absolute;
+							right: 74px;
+							top: 225px;
+							
+								li {
+									margin: 0 auto;
+									display: inline-block;
+									text-align: center;
+									float: right;
+									border: none;
+										a {
+											display: inline-block;
+											margin: 0px auto;
+											padding: 8px;
+											color: #fff;
+										}
+								}
+
+								li.facebook {
+									background-color: #3c74ba;
+										&:hover {
+											background-color: #2d435f;
+										};
+								}
+
+								li.twitter {
+									background-color: #1fc2f7;
+										&:hover {
+											background-color: #105970;
+										};
+								}
+
+								li.google {
+									background-color: #db321b;
+										&:hover {
+											background-color: #802317;
+										};
+								}
+
+								li.pinterest {
+									background-color: #a80909;
+										&:hover {
+											background-color: #640808;
+										};
+								}
+						}
+				}
+
+		}
+	}	
+
+/******************************* NAV *******************************/
+
+
+/******************************* MAIN *******************************/
+
+	section#main {
+		background-color: #333333;
+			h1 {
+				text-transform: uppercase;
+			}
+
+			hr {
+				width: 140px;
+				border: none;
+				border-bottom: 2px solid #da491c; 
+				margin: 35px auto;
+			}
+	}
+
+/******************************* MAIN *******************************/
+
+
+/******************************* GALLERY *******************************/
+
+	section#gallery {
+		h2 {
+			text-transform: uppercase;
+			margin: 105px auto 25px auto;
+		}
+
+		h4 {
+			color: #333333;
+			margin: 0 auto;
+		}
+
+		hr {
+			margin: 35px 0px;
+			width: 140px;
+			border: none;
+			border-bottom: 2px solid #da491c;
+		}
+
+		ul.groups {
+			padding: 0px;
+			margin-bottom: 40px;
+				li {
+					display: inline;
+					margin-right: 35px;
+					@include font($family: "OpenSans", $color: #646464);
+				}
+		}
+
+		button {
+			max-width: 270px;
+			width: 100%;
+			padding: 20px 70px;
+			margin-bottom: 85px;
+			background-color: transparent;
+			border: 1px solid #666666;
+			outline: none;
+			border-radius: 3px;
+			@include font(14px, 36px, "OpenSans", #333333);
+				&:active, &:focus {
+					background-color: #333333;
+					color: #fff;
+				};
+		}
+
+		img {
+			margin-bottom: 25px;
+			width: 100%;
+			height: auto;
+
+		}
+
+		img.last {
+			margin-bottom: 100px;
+		}
+	}
+
+/******************************* GALLERY *******************************/
+
+
+/******************************* FOOTER *******************************/
+
+	footer {
+		background-color: #333333;
+
+			ul.menu {
+				padding: 0px;
+				margin: 80px auto 35px auto;
+					li {
+						display: inline;
+						margin-right: 25px;
+							a {
+								@include font(13px, 36px, "LatoRegular", #ffffff);
+								text-decoration: none;
+									&:hover {
+										-webkit-transition: color 0.5s ease-in-out;
+										-o-transition: color 0.5s ease-in-out;
+										transition: color 0.5s ease-in-out;
+										color: #c6c3c3;
+									};
+							}
+					}
+			}
+
+
+
+			form {
+					div.formWrapper {
+						border: none;
+						border-bottom: 1px solid #e7dede;
+						max-width: 840px;
+					}
+
+					input[type="email"] {
+						width: 100%;
+						border: none;
+						display: inline-block;
+						padding: 0px 40px 20px 0px;
+						background-color: transparent;
+						color: #fff;
+						outline: none;
+						@include font(60px, 30px, "LatoLight");
+					}
+
+					input[type="email"]::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease; color:#4c4b4b;}
+					input[type="email"]::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease; color:#4c4b4b}
+					input[type="email"]:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease; color:#4c4b4b}
+					input[type="email"]:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease; color:#4c4b4b}
+					input[type="email"]:focus::-webkit-input-placeholder {text-indent: 1000px; transition: text-indent 0.3s ease; color:#fff}
+					input[type="email"]:focus::-moz-placeholder          {text-indent: 1000px; transition: text-indent 0.3s ease; color:#fff}
+					input[type="email"]:focus:-moz-placeholder           {text-indent: 1000px; transition: text-indent 0.3s ease; color:#fff}
+					input[type="email"]:focus:-ms-input-placeholder      {text-indent: 1000px; transition: text-indent 0.3s ease; color:#fff}
+
+					input[type="submit"] {
+						display: none;
+						@include font(18px, 30px, "OpenSans", #fff);
+						background-color: transparent;
+						padding: 15px;
+						width: 100%;
+						max-width: 130px;
+						border-radius: 5px;
+						border: none;
+						outline: none;
+						text-transform: uppercase;
+							&:hover {
+								outline: 1px solid;
+							};
+
+					}
+
+					p {
+						@include font(16px, 30px, "LatoRegular", #999999);
+						margin: 14px auto 0px auto;
+					}
+			}
+
+
+
+			p {
+				@include font(16px, 30px, "LatoRegular", #999999);
+			}
+
+
+			ul.social {
+				padding: 0px;
+					li {
+						display: inline;
+							a {
+								color: #999999;
+									&:hover, &:active, &:focus {
+										text-decoration: none;
+									};
+
+									&:hover {
+										color: #7d7b7b;
+										-webkit-transition: color 0.5s;
+										-o-transition: color 0.5s;
+										transition: color 0.5s;
+									};
+							}
+					}
+			}
+	}
+
+/******************************* FOOTER *******************************/
+

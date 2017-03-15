@@ -1,0 +1,168 @@
+﻿/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	section#main {
+		h1 {
+			font-size: 70px;
+			margin: 100px auto 0px auto;
+		}
+
+		h4 {
+			margin-top: 0px;
+			margin-bottom: 75px;
+		}
+	}
+
+	section#gallery {
+		div.col-lg-3 button, div.col-lg-9 button {
+			display: block;
+			margin: 10px auto;
+		}
+	}
+
+
+	footer {
+		ul.menu {
+			li.ourteam, li.specialty, li.news {
+				display: none;
+			}
+		}
+
+		form {
+			margin-bottom: 10px;
+			input[type="email"] {
+				font-size: 40px;
+				max-width: 295px;
+			}
+		}
+
+		h3 {
+			margin: 0px auto 10px auto;
+		}
+
+		p {
+			margin: 0px auto 0px auto;
+		}
+
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	section#main {
+		h1 {
+			margin: 245px auto 50px auto;
+			font-size: 110px;
+		}
+
+		h4 {
+			margin: 50px auto 275px auto;
+		}
+	}
+
+	section#gallery {
+		div.col-lg-3 button, div.col-lg-9 button {
+			display: block;
+			margin: 0px auto;
+		}
+	}
+
+
+	footer {
+		
+		ul.menu {
+			li.ourteam {
+				display: none;
+			}
+		}
+
+		form {
+			margin-bottom: 10px;
+			input[type="email"] {
+				font-size: 60px;
+				max-width: 585px;
+			}
+		}
+
+		h3 {
+			margin: 0px auto 10px auto;
+		}
+
+		p {
+			margin: 0px auto 0px auto;
+		}
+
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	section#gallery {
+		div.col-lg-3 button, div.col-lg-9 button {
+			display: inline;
+			margin: 0px auto;
+		}
+	}
+
+	footer {
+		form {
+			margin: 0px auto 50px auto;
+			input[type="email"] {
+				max-width: 560px;
+			}
+		}
+
+		h3 {
+			margin: 80px auto 0px auto;
+		}
+
+		p {
+			margin: 20px auto 30px auto;
+		}
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	footer {
+		form {
+			input[type="email"] {
+				max-width: 700px;
+			}
+		}
+	}
+}
