@@ -103,10 +103,9 @@
 
 
 	footer {
-		
 		ul.menu {
-			li.ourteam {
-				display: none;
+			li.specialty, li.news {
+				display: inline;
 			}
 		}
 
